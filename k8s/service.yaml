@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: music-app
+  labels:
+    app: music-app
+spec:
+  selector:
+    app: music-app
+  ports:
+    - port: 80
+      targetPort: 5000
+      protocol: TCP
+  type: LoadBalancer
