@@ -4,7 +4,7 @@ metadata:
   name: postgres-secret
 type: Opaque
 data:
-  POSTGRES_PASSWORD: cGFzc3dvcmQ=  # 'password' encoded in base64
+  POSTGRES_PASSWORD: cGFzc3dvcmQ=  
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
